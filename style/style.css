@@ -1,0 +1,41 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+/* header style */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px;
+}
+
+h3{
+    font-size: 45px;
+    font-family:open sans ;
+    color: rgb(40, 14, 14);
+    font-weight: 800;
+}
+ .orange-color{
+    color: #FD6E0A;
+} 
+nav >ul{
+    display: flex;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-right: 50px;
+     
+}
+li a{
+    text-decoration: none;
+    text-align: center;
+}
+.btn-1{
+    width: 120px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: #FD6E0A;
+    color: aliceblue;
+}
