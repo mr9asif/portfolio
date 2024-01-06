@@ -7,7 +7,7 @@
 nav{
     display: flex;
     justify-content: space-between;
-    margin: 60px;
+    margin: 0 200px;
 }
 
 h3{
@@ -38,4 +38,23 @@ li a{
     border-radius: 5px;
     background-color: #FD6E0A;
     color: aliceblue;
+}
+/* header styles */
+header{
+    background-color: #FFF8F3;
+    
+}
+.banner{
+    display: flex;
+    /* padding: 0 200px; */
+    justify-content: space-between;
+}
+img{
+    width: 430px;
+    position: relative;
+    right: 0px;
+    background: url('../bg.jpg.png');
+}
+.info{
+    padding: 0 200px;
 }
