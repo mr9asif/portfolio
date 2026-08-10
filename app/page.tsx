@@ -1,6 +1,9 @@
 import About from "./components/About";
+import Contact from "./components/Contact";
+import EducationCourses from "./components/Education-Courses";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 export default function Home() {
@@ -15,17 +18,10 @@ export default function Home() {
       <About />
       <Skills />
 
-      <section id="projects" className="min-h-screen px-6 py-32">
-        <h2 className="text-4xl font-bold">Projects</h2>
-      </section>
+      <Projects />
 
-      <section id="experience" className="min-h-screen px-6 py-32">
-        <h2 className="text-4xl font-bold">Experience</h2>
-      </section>
-
-      <section id="contact" className="min-h-screen px-6 py-32">
-        <h2 className="text-4xl font-bold">Contact</h2>
-      </section>
+      <EducationCourses />
+      <Contact />
     </main>
   );
 }
