@@ -1,6 +1,7 @@
 import About from "./components/About";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Skills from "./components/Skills";
 
 export default function Home() {
   return (
@@ -12,9 +13,7 @@ export default function Home() {
       {/* Temporary sections */}
 
       <About />
-      <section id="skills" className="min-h-screen px-6 py-32">
-        <h2 className="text-4xl font-bold">Skills</h2>
-      </section>
+      <Skills />
 
       <section id="projects" className="min-h-screen px-6 py-32">
         <h2 className="text-4xl font-bold">Projects</h2>
