@@ -30,7 +30,7 @@ export default function Navbar() {
           items-center
           rounded-full
           border border-white/10
-          bg-[#10141d]/90
+          bg-gray-700
           px-2 py-2
           shadow-lg shadow-black/10
           backdrop-blur-xl

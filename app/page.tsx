@@ -1,3 +1,4 @@
+import About from "./components/About";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 
@@ -9,10 +10,8 @@ export default function Home() {
       <Hero />
 
       {/* Temporary sections */}
-      <section id="about" className="min-h-screen px-6 py-32">
-        <h2 className="text-4xl font-bold">About</h2>
-      </section>
 
+      <About />
       <section id="skills" className="min-h-screen px-6 py-32">
         <h2 className="text-4xl font-bold">Skills</h2>
       </section>
