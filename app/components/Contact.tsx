@@ -63,7 +63,7 @@ export default function Contact() {
         ========================== */}
 
         <div className="flex items-center gap-4 border-b border-white/10 pb-5">
-          <span className="text-sm font-medium text-[#f5b51b]">05</span>
+          <span className="text-sm font-medium text-yellow-600">05</span>
 
           <span className="h-px w-8 bg-[#f5b51b]/50" />
 
@@ -158,7 +158,7 @@ export default function Contact() {
                     text-slate-500
                     transition-all
                     group-hover:border-[#f5b51b]/30
-                    group-hover:text-[#f5b51b]
+                    group-hover:text-yellow-600
                   "
                 >
                   <Mail size={16} />
@@ -201,7 +201,7 @@ export default function Contact() {
                     text-slate-500
                     transition-all
                     group-hover:border-[#f5b51b]/30
-                    group-hover:text-[#f5b51b]
+                    group-hover:text-yellow-600
                   "
                 >
                   <Phone size={16} />
@@ -216,6 +216,7 @@ export default function Contact() {
                 </span>
               </a>
 
+              {/* Location */}
               {/* Location */}
               <div
                 className="
@@ -271,9 +272,9 @@ export default function Contact() {
                   border-white/10
                   text-slate-500
                   transition-all
-                  hover:border-white/20
-                  hover:bg-white/[0.03]
-                  hover:text-white
+                  hover:border-[#f5b51b]/30
+                  hover:bg-[#f5b51b]/5
+                  hover:text-[#f5b51b]
                 "
               >
                 <SiGithub size={17} />
@@ -291,7 +292,7 @@ export default function Contact() {
       transition-all
       hover:border-white/20
       hover:bg-white/[0.03]
-      hover:text-white
+      hover:text-yellow-600
     "
               >
                 <svg
@@ -305,7 +306,8 @@ export default function Contact() {
               </a>
 
               <a
-                href="mailto:your@email.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=asifalibd002@gmail.com"
+                target="blank"
                 aria-label="Email"
                 className="
                   flex
@@ -545,14 +547,15 @@ export default function Contact() {
                   justify-center
                   gap-2
                   rounded-lg
-                  bg-[#f5b51b]
+                  cursor-pointer
+                  bg-yellow-600
                   px-6
                   text-sm
                   font-medium
-                  text-[#080b12]
+                  text-white
                   transition-all
                   duration-200
-                  hover:bg-[#ffc533]
+                  hover:bg-yellow-700
                   disabled:cursor-not-allowed
                   disabled:opacity-60
                 "

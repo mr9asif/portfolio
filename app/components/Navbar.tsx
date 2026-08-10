@@ -1,67 +1,126 @@
 "use client";
 
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const navItems = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
-  { label: "Education", href: "#education" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#home" },
+  { label: "About", href: "/#about" },
+  { label: "Skills", href: "/#skills" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Education", href: "/#education" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
+
+  /* =========================
+      ACTIVE SECTION
+  ========================== */
+
+  useEffect(() => {
+    // If we're not on the home page, don't try to detect
+    // home-page sections.
+    if (window.location.pathname !== "/") {
+      return;
+    }
+
+    const sections = navItems
+      .map((item) => {
+        const sectionId = item.href.split("#")[1];
+        const element = document.getElementById(sectionId);
+
+        return element;
+      })
+      .filter(Boolean) as HTMLElement[];
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visibleSections = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+
+        if (visibleSections.length > 0) {
+          setActiveSection(visibleSections[0].target.id);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "-20% 0px -60% 0px",
+        threshold: 0,
+      },
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   const handleNavigation = () => {
     setIsOpen(false);
   };
 
   return (
-    <header className="fixed left-0 right-0 top-0 z-50 px-4 pt-4 sm:pt-5">
+    <header
+      className="
+        fixed
+        left-1/2
+        top-4
+        z-50
+        w-[calc(100%-2rem)]
+        max-w-xl
+        -translate-x-1/2
+        rounded-full
+        border
+        border-white/10
+        bg-gray-600
+        px-2
+        py-2
+        shadow-xl
+        shadow-black/10
+        backdrop-blur-xl
+      "
+    >
       {/* =========================
           DESKTOP NAVBAR
       ========================== */}
-      <nav
-        className="
-          mx-auto hidden w-fit
-          items-center
-          rounded-full
-          border border-white/10
-          bg-gray-700
-          px-2 py-2
-          shadow-lg shadow-black/10
-          backdrop-blur-xl
-          md:flex
-        "
-      >
-        {navItems.map((item, index) => (
-          <a
-            key={item.label}
-            href={item.href}
-            className={`
-              rounded-full
-              px-4 py-2.5
-              text-sm font-medium
-              transition-all duration-200
-              lg:px-5
-              ${
-                index === 0
-                  ? "bg-[#f5b51b] text-[#080b12]"
-                  : "text-slate-300 hover:bg-white/5 hover:text-white"
-              }
-            `}
-          >
-            {item.label}
-          </a>
-        ))}
+
+      <nav className="hidden items-center justify-center md:flex">
+        {navItems.map((item) => {
+          const sectionId = item.href.split("#")[1];
+          const isActive = activeSection === sectionId;
+
+          return (
+            <a
+              key={item.label}
+              href={item.href}
+              className={`
+                rounded-full
+                px-4 py-2.5
+                text-sm font-medium
+                transition-all duration-200
+                lg:px-5
+                ${
+                  isActive
+                    ? "bg-[#c28a07] text-white"
+                    : "text-gray-300 hover:bg-white/5 hover:text-white"
+                }
+              `}
+            >
+              {item.label}
+            </a>
+          );
+        })}
       </nav>
 
       {/* =========================
           MOBILE NAVBAR
       ========================== */}
+
       <div className="flex items-center justify-between md:hidden">
         {/* Brand */}
         <a
@@ -108,6 +167,7 @@ export default function Navbar() {
       {/* =========================
           MOBILE MENU
       ========================== */}
+
       {isOpen && (
         <div
           className="
@@ -126,29 +186,34 @@ export default function Navbar() {
             md:hidden
           "
         >
-          {navItems.map((item, index) => (
-            <a
-              key={item.label}
-              href={item.href}
-              onClick={handleNavigation}
-              className={`
-                block
-                rounded-xl
-                px-4
-                py-3
-                text-sm
-                font-medium
-                transition
-                ${
-                  index === 0
-                    ? "bg-[#f5b51b] text-[#080b12]"
-                    : "text-slate-300 hover:bg-white/5 hover:text-white"
-                }
-              `}
-            >
-              {item.label}
-            </a>
-          ))}
+          {navItems.map((item) => {
+            const sectionId = item.href.split("#")[1];
+            const isActive = activeSection === sectionId;
+
+            return (
+              <a
+                key={item.label}
+                href={item.href}
+                onClick={handleNavigation}
+                className={`
+                  block
+                  rounded-xl
+                  px-4
+                  py-3
+                  text-sm
+                  font-medium
+                  transition
+                  ${
+                    isActive
+                      ? "bg-[#f5b51b] text-[#080b12]"
+                      : "text-slate-300 hover:bg-white/5 hover:text-white"
+                  }
+                `}
+              >
+                {item.label}
+              </a>
+            );
+          })}
         </div>
       )}
     </header>

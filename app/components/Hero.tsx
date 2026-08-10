@@ -113,7 +113,7 @@ export default function Hero() {
                   text-slate-400
                   transition
                   hover:bg-white/10
-               hover:text-yellow-500
+               hover:text-yellow-600
                 "
               >
                 <svg
@@ -141,7 +141,7 @@ export default function Hero() {
                   text-slate-400
                   transition
                   hover:bg-white/10
-                 hover:text-yellow-500
+                 hover:text-yellow-600
                 "
               >
                 <SiGithub size={18} />
@@ -164,7 +164,7 @@ export default function Hero() {
     text-slate-400
     transition
     hover:bg-white/10
-    hover:text-yellow-500
+    hover:text-yellow-600
   "
               >
                 <Mail size={18} />
@@ -202,16 +202,16 @@ export default function Hero() {
                 gap-3
                 rounded-lg
                 border
-                border-[#f5b51b]
+                border-yellow-600
                 px-5
                 py-3
                 text-sm
                 font-medium
-                text-[#f5b51b]
+                text-yellow-600
                 transition-all
                 duration-200
-                hover:bg-[#f5b51b]
-                hover:text-[#080b12]
+                hover:bg-yellow-600
+                hover:text-white
                 sm:px-6
                 sm:py-3.5
               "

@@ -16,7 +16,11 @@ export default function TypingRole() {
       "
     >
       <Typewriter
-        words={["Full-Stack Developer", "MERN Stack Developer"]}
+        words={[
+          "Full-Stack Developer </>",
+          "MERN Stack Developer 🖥️",
+          "Software Engineer 💻",
+        ]}
         loop={0}
         cursor
         cursorStyle="|"

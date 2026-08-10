@@ -70,7 +70,7 @@ export default function Skills() {
       <div className="mx-auto max-w-6xl">
         {/* Header */}
         <div className="flex items-center gap-4 border-b border-white/10 pb-5">
-          <span className="text-sm font-medium text-[#f5b51b]">02</span>
+          <span className="text-sm font-medium text-yellow-600">02</span>
 
           <span className="h-px w-8 bg-[#f5b51b]/50" />
 
@@ -84,7 +84,7 @@ export default function Skills() {
           <h2 className="text-3xl font-semibold leading-tight tracking-tight text-white sm:text-4xl md:text-5xl">
             Things I use to
             <span className="text-slate-500"> build, </span>
-            <span className="text-[#f5b51b]">solve,</span>
+            <span className="text-yellow-600">solve,</span>
             <span className="text-slate-500"> and </span>
             create.
           </h2>
@@ -113,7 +113,7 @@ export default function Skills() {
             >
               {/* Category */}
               <div className="flex items-center gap-3">
-                <span className="text-xs text-[#f5b51b]">
+                <span className="text-xs text-yellow-500">
                   {String(index + 1).padStart(2, "0")}
                 </span>
 
@@ -158,7 +158,7 @@ export default function Skills() {
                             text-slate-500
                             transition-colors
                             duration-200
-                            group-hover:text-[#f5b51b]
+                            group-hover:text-yellow-600
                           "
                         />
                       ) : (

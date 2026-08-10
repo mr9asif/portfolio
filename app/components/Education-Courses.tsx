@@ -114,7 +114,7 @@ export default function EducationCourses() {
         ========================== */}
 
         <div className="flex items-center gap-4 border-b border-white/10 pb-5">
-          <span className="text-sm font-medium text-[#f5b51b]">04</span>
+          <span className="text-sm font-medium text-yellow-600">04</span>
 
           <span className="h-px w-8 bg-[#f5b51b]/50" />
 
@@ -196,7 +196,7 @@ export default function EducationCourses() {
               <GraduationCap
                 size={17}
                 strokeWidth={1.7}
-                className="text-[#f5b51b]"
+                className="text-yellow-600"
               />
 
               <h3
@@ -244,7 +244,7 @@ export default function EducationCourses() {
                         rounded-full
                         border-[3px]
                         border-[#09193f]
-                        bg-[#f5b51b]
+                        bg-yellow-600
                         md:block
                       "
                     />
@@ -262,7 +262,7 @@ export default function EducationCourses() {
                           className="
                             text-xs
                             font-medium
-                            text-[#f5b51b]
+                            text-yellow-600
                           "
                         >
                           {item.number}
@@ -311,7 +311,7 @@ export default function EducationCourses() {
                               className="
                                 text-xs
                                 font-medium
-                                text-[#f5b51b]
+                                text-yellow-600
                               "
                             >
                               GPA 5.00
@@ -397,7 +397,7 @@ export default function EducationCourses() {
                         rounded-full
                         border-[3px]
                         border-[#09193f]
-                        bg-[#f5b51b]
+                        bg-yellow-600
                         md:block
                       "
                     />
@@ -415,7 +415,7 @@ export default function EducationCourses() {
                           className="
                             text-xs
                             font-medium
-                            text-[#f5b51b]
+                            text-yellow-600
                           "
                         >
                           {course.number}
@@ -464,7 +464,7 @@ export default function EducationCourses() {
                             font-medium
                             ${
                               course.status === "In progress"
-                                ? "text-[#f5b51b]"
+                                ? "text-yellow-600"
                                 : "text-slate-400"
                             }
                           `}

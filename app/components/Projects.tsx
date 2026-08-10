@@ -88,7 +88,7 @@ export default function Projects() {
           "
         >
           <div className="flex items-center gap-4">
-            <span className="text-sm font-medium text-[#f5b51b]">03</span>
+            <span className="text-sm font-medium text-yellow-600">03</span>
 
             <span className="h-px w-8 bg-[#f5b51b]/50" />
 
@@ -117,7 +117,7 @@ export default function Projects() {
               tracking-[0.15em]
               text-slate-500
               transition-colors
-              hover:text-[#f5b51b]
+              hover:text-yellow-600
               sm:flex
             "
           >
@@ -244,7 +244,7 @@ export default function Projects() {
                       items-center
                       justify-center
                       rounded-full
-                      bg-[#f5b51b]
+                      bg-yellow-600
                       text-[#080b12]
                       shadow-xl
                       shadow-black/20
@@ -266,7 +266,7 @@ export default function Projects() {
                       className="
                         text-xs
                         font-medium
-                        text-[#f5b51b]
+                        text-yellow-600
                       "
                     >
                       {project.number}
@@ -305,7 +305,7 @@ export default function Projects() {
                       duration-200
                       hover:border-[#f5b51b]/40
                       hover:bg-[#f5b51b]/10
-                      hover:text-[#f5b51b]
+                      hover:text-yellow-600
                     "
                   >
                     <ArrowUpRight size={15} />
@@ -410,9 +410,9 @@ export default function Projects() {
                       gap-2
                       text-xs
                       font-medium
-                      text-[#f5b51b]
+                      text-yellow-600
                       transition-colors
-                      hover:text-[#ffc533]
+                      hover:text-yellow-600
                     "
                   >
                     Live project

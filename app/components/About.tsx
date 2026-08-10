@@ -31,7 +31,7 @@ export default function About() {
         {/* Section Header */}
         <div className="mb-16 flex items-end justify-between border-b border-white/10 pb-5">
           <div className="flex items-center gap-4">
-            <span className="text-sm font-medium text-[#f5b51b]">01</span>
+            <span className="text-sm font-medium text-yellow-600">01</span>
 
             <span className="h-px w-8 bg-[#f5b51b]/50" />
 
@@ -66,7 +66,7 @@ export default function About() {
               Building, learning,
               <span className="text-slate-500"> and solving problems </span>
               with
-              <span className="text-[#f5b51b]"> technology.</span>
+              <span className="text-yellow-600"> technology.</span>
             </h2>
 
             <div

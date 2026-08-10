@@ -10,7 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name | Software Developer",
+  title: "ASIF | Software Engineer",
   description:
     "Personal portfolio of a software developer building modern web applications.",
 };
