@@ -11,7 +11,7 @@ const education = [
     description:
       "Studied programming, databases, data structures, computer architecture, networking, and software development.",
     icon: GraduationCap,
-    image: "/education/dinajpur-polytechnic.png",
+    image: "/projects/dpi.png",
   },
   {
     number: "02",
@@ -20,7 +20,7 @@ const education = [
     period: "2020 — 2022",
     description: "Completed secondary education with a GPA of 5.00.",
     icon: GraduationCap,
-    image: "/education/boropukur-school.png",
+    image: "/projects/Blue and Yellow Modern School Logo (1).png",
   },
 ];
 
@@ -32,7 +32,7 @@ const courses = [
     period: "December 2023 — June 2024",
     status: "Completed",
     icon: BookOpen,
-    image: "/courses/programming-hero-level-1.png",
+    image: "/projects/ph.jpeg",
     certificate: "#",
   },
   {
@@ -42,7 +42,7 @@ const courses = [
     period: "March 2025 — February 2026",
     status: "Completed",
     icon: BookOpen,
-    image: "/courses/apna-college.png",
+    image: "/projects/apna_college_logo.jpeg",
     certificate: "#",
   },
   {
@@ -52,7 +52,7 @@ const courses = [
     period: "May 2026 — Present",
     status: "In progress",
     icon: BookOpen,
-    image: "/courses/programming-hero-level-2.png",
+    image: "/projects/ph.jpeg",
     certificate: "#",
   },
 ];

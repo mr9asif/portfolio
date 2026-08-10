@@ -100,7 +100,7 @@ export default function Hero() {
             <div className="flex items-center gap-2">
               {/* LinkedIn */}
               <a
-                href="#"
+                href="https://www.linkedin.com/in/mr9asif"
                 aria-label="LinkedIn"
                 className="
                   flex
@@ -113,7 +113,7 @@ export default function Hero() {
                   text-slate-400
                   transition
                   hover:bg-white/10
-                  hover:text-white
+               hover:text-yellow-500
                 "
               >
                 <svg
@@ -128,7 +128,7 @@ export default function Hero() {
 
               {/* GitHub */}
               <a
-                href="#"
+                href="https://github.com/mr9asif"
                 aria-label="GitHub"
                 className="
                   flex
@@ -141,7 +141,7 @@ export default function Hero() {
                   text-slate-400
                   transition
                   hover:bg-white/10
-                  hover:text-white
+                 hover:text-yellow-500
                 "
               >
                 <SiGithub size={18} />
@@ -149,21 +149,23 @@ export default function Hero() {
 
               {/* Email */}
               <a
-                href="#"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=asifalibd002@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Email"
                 className="
-                  flex
-                  h-9
-                  w-9
-                  items-center
-                  justify-center
-                  rounded-lg
-                  bg-white/5
-                  text-slate-400
-                  transition
-                  hover:bg-white/10
-                  hover:text-white
-                "
+    flex
+    h-9
+    w-9
+    items-center
+    justify-center
+    rounded-lg
+    bg-white/5
+    text-slate-400
+    transition
+    hover:bg-white/10
+    hover:text-yellow-500
+  "
               >
                 <Mail size={18} />
               </a>

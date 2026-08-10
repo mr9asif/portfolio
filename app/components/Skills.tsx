@@ -4,6 +4,7 @@ import {
   SiGithub,
   SiJavascript,
   SiLinux,
+  SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
   SiPostgresql,
@@ -13,6 +14,7 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "@icons-pack/react-simple-icons";
+import { NetworkIcon } from "lucide-react";
 
 const skillGroups = [
   {
@@ -31,6 +33,7 @@ const skillGroups = [
       { name: "Node.js", icon: SiNodedotjs },
       { name: "Express", icon: SiExpress },
       { name: "REST API", icon: null },
+      { name: "MongoDB", icon: SiMongodb },
       { name: "PostgreSQL", icon: SiPostgresql },
       { name: "Prisma", icon: SiPrisma },
     ],
@@ -52,6 +55,7 @@ const skillGroups = [
       { name: "Algorithms", icon: null },
       { name: "SQL", icon: null },
       { name: "DBMS", icon: null },
+      { name: "Networking", icon: NetworkIcon },
       { name: "Problem Solving", icon: null },
     ],
   },

@@ -169,7 +169,7 @@ export default function Contact() {
                     Email
                   </span>
 
-                  <span className="mt-1 block">your@email.com</span>
+                  <span className="mt-1 block">asifalibd002@email.com</span>
                 </span>
               </a>
 
@@ -212,7 +212,7 @@ export default function Contact() {
                     Phone
                   </span>
 
-                  <span className="mt-1 block">+880 1XXX-XXXXXX</span>
+                  <span className="mt-1 block">+880 1792952161</span>
                 </span>
               </a>
 
@@ -256,7 +256,7 @@ export default function Contact() {
             {/* Social links */}
             <div className="mt-10 flex items-center gap-3">
               <a
-                href="#"
+                href="https://github.com/mr9asif"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -343,11 +343,10 @@ export default function Contact() {
             "
           >
             <div className="mb-8">
-              <p className="text-sm font-medium text-white">
-                Send me a message
-              </p>
+              <p className="text-sm font-medium text-white">Send me an email</p>
 
               <p className="mt-2 text-sm text-slate-500">
+                Use the form below to send me a message directly to my inbox.
                 I&apos;ll get back to you as soon as I can.
               </p>
             </div>
@@ -526,7 +525,8 @@ export default function Contact() {
               {/* Status */}
               {sent && (
                 <p className="text-sm text-emerald-400">
-                  Message sent successfully. Thank you!
+                  Message sent successfully! I’ll receive it in my inbox and get
+                  back to you as soon as possible. Thank you!
                 </p>
               )}
 
