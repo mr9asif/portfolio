@@ -1,5 +1,6 @@
 import { SiGithub } from "@icons-pack/react-simple-icons";
 import { Download, Mail } from "lucide-react";
+import TypingRole from "./typing-role";
 
 export default function Hero() {
   return (
@@ -83,14 +84,14 @@ export default function Hero() {
           >
             <h1
               className="
-                text-4xl
-                font-bold
-                tracking-tight
-                text-white
-                sm:text-5xl
-                md:text-6xl
-                lg:text-7xl
-              "
+    text-5xl
+    font-bold
+    tracking-tight
+    text-white
+    sm:text-5xl
+    md:text-6xl
+    lg:text-7xl
+  "
             >
               Asif Ali
             </h1>
@@ -170,21 +171,7 @@ export default function Hero() {
           </div>
 
           {/* Role */}
-          <h2
-            className="
-              mb-5
-              text-xl
-              font-semibold
-              text-[#f5b51b]
-              sm:mb-6
-              sm:text-2xl
-              md:text-3xl
-            "
-          >
-            Full-Stack Developer
-            <span className="animate-pulse">|</span>
-          </h2>
-
+          <TypingRole />
           {/* Description */}
           <p
             className="
