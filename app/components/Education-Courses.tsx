@@ -33,7 +33,7 @@ const courses = [
     status: "Completed",
     icon: BookOpen,
     image: "/projects/ph.jpeg",
-    certificate: "#",
+    certificate: "/certificates/PHL1.pdf",
   },
   {
     number: "02",
@@ -43,7 +43,7 @@ const courses = [
     status: "Completed",
     icon: BookOpen,
     image: "/projects/apna_college_logo.jpeg",
-    certificate: "#",
+    certificate: "/certificates/DSA.pdf",
   },
   {
     number: "03",
